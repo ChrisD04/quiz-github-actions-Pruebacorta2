@@ -1,0 +1,20 @@
+name: Christopher Lenyn Duarte Aguilar 
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Saludo
+        run: echo "Hola, mi nombre es Christopher Duarte"
+
+      - name: Fecha y hora actual
+        run: date
+
+      - name: Sistema operativo
+        run: echo "Sistema operativo: $RUNNER_OS"
